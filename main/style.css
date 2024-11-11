@@ -155,10 +155,58 @@ main{
 .data span{
     font-size: 30px;
 }
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
 
+td,th {
+    height: 40px;
+    border-radius: 8px;
+}
+
+th{
+background-color:#edf3f8 ;
+color: black;
+font-weight: bold;
+font-size: 16px;
+}
+
+td{
+    background-color: white;
+    color: #23282d;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .5s;
+
+}
+
+td:hover{
+    background-color: #133E87;
+
+
+}
+.price{
+
+    background-color: aliceblue;
+
+}
+
+.count{
+
+background-color: #ced2cc;
+
+}
 /* Media Query 789 && 1020 */
 @media (max-width:1020px) and (min-width:789px) {
     .data-info .box{
        flex-basis: calc(50%-40px);
+    }
+}
+
+@media (max-width:540px) {
+    .menu{
+       height: 100%;
     }
 }
